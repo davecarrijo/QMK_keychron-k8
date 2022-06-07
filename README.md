@@ -6,22 +6,22 @@ This is for K8 RGB v2 ANSI.
 
 Here is the template keymap : https://imgur.com/a/rZqxYul
 
-FN+{
-F1 = F13,
-F2 = F14,
-F3 = F15,
-F4 = F16,
-Print key = F17,
-MIc key = F18,
-appkey/option = F19,
-Light_bulb_key = toogle RGB,
-minus key  = less light from leds,
-plus key  = more light from leds,
-right key = change rgb mode,
-Left key = change rgb mode,
-Up/down key = more/less saturation,
-Ins/Del key = change the Ritme of the RBG FX,
-}
+-FN+{
+-F1 = F13,
+-F2 = F14,
+-F3 = F15,
+-F4 = F16,
+-Print key = F17,
+-MIc key = F18,
+-appkey/option = F19,
+-Light_bulb_key = toogle RGB,
+-minus key  = less light from leds,
+-plus key  = more light from leds,
+-right key = change rgb mode,
+-Left key = change rgb mode,
+-Up/down key = more/less saturation,
+-Ins/Del key = change the Ritme of the RBG FX,
+-}
 
 Option key = App key/contextual menu
 
@@ -84,7 +84,7 @@ If you have never touched QMK before: https://beta.docs.qmk.fm/tutorial/newbs_ge
 -   [x] Get QMK Working
 -   [x] Get RGB working
 -   [ ] Get VIA working (currently no EEPROM support, which is required for VIA)
-    (For some people it will work, for some it wont, I'm using windows 10, so it dont for people using windows 10 or less it may, but just in windows)
+-    (For some people it will work, for some it wont, I'm using windows 11, so it dont for people using windows 10 or less it may, but just in windows)
 -   [ ] Bluetooth functionality (currently waiting on official Bluetooth support from QMK)
 
 ## Chips
