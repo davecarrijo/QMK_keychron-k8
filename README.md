@@ -23,7 +23,7 @@ Up/down key = more/less saturation,
 Ins/Del key = change the Ritme of the RBG FX,
 }
 
-Option key = App key/ concextual menu
+Option key = App key/contextual menu
 
 #Comand to compile it
 qmk compile -kb keychron/k8/rgb/ansi -km via
