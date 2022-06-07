@@ -1,27 +1,27 @@
 # QMK_keychron-k8 Reverse Engineering
-
+<img src="https://cdn.shopify.com/s/files/1/0599/4977/7066/files/Keychron-K8-UK-banner_1400x.jpg?v=1651999525">
 This is an unofficial firmware, please use at your own discretion.
 
 This is for K8 RGB v2 ANSI.
 
 Here is the template keymap : https://imgur.com/a/rZqxYul
-
--FN+{
--F1 = F13,
--F2 = F14,
--F3 = F15,
--F4 = F16,
--Print key = F17,
--MIc key = F18,
--appkey/option = F19,
--Light_bulb_key = toogle RGB,
--minus key  = less light from leds,
--plus key  = more light from leds,
--right key = change rgb mode,
--Left key = change rgb mode,
--Up/down key = more/less saturation,
--Ins/Del key = change the Ritme of the RBG FX,
--}
+<img src="https://i.imgur.com/WRYnYoj.png">
+-FN+{<br>
+F1 = F13,<br>
+F2 = F14,<br>
+F3 = F15,<br>
+F4 = F16,<br>
+Print key = F17,<br>
+MIc key = F18,<br>
+appkey/option = F19,<br>
+Light_bulb_key = toogle RGB,<br>
+minus key  = less light from leds,<br>
+plus key  = more light from leds,<br>
+right key = change rgb mode,<br>
+Left key = change rgb mode,<br>
+Up/down key = more/less saturation,<br>
+Ins/Del key = change the Ritme of the RBG FX,<br>
+}<br>
 
 Option key = App key/contextual menu
 
@@ -83,7 +83,7 @@ If you have never touched QMK before: https://beta.docs.qmk.fm/tutorial/newbs_ge
 -   [x] Confirm Chibios functionality
 -   [x] Get QMK Working
 -   [x] Get RGB working
--   [ ] Get VIA working (currently no EEPROM support, which is required for VIA)
+-   [ ] Get VIA working (currently no EEPROM support, which is required for VIA)<br>
 -    (For some people it will work, for some it wont, I'm using windows 11, so it dont for people using windows 10 or less it may, but just in windows)
 -   [ ] Bluetooth functionality (currently waiting on official Bluetooth support from QMK)
 
