@@ -27,6 +27,9 @@ Ins/Del key = change the Ritme of the RBG FX
 
 Option key = App key/ concextual menu
 
+#Comand to compile it
+qmk compile -kb keychron/k8/rgb/ansi -km via
+
 All media keys work like it should
 
 #about the rgb FX
@@ -64,7 +67,7 @@ If you have never touched QMK before: https://beta.docs.qmk.fm/tutorial/newbs_ge
 1. Customize your keymap and compile your firmware
     - Keymaps can be found under `keyboards/keychron/k8`
     - For example, if you want a firmware for the Keychron K8 ANSI, edit the `keymap.c` under `keyboards/keychron/k8/keymaps/ansi`
-    - Then run `make keychron/k8:ansi` in QMK_MSYS
+    - Then run `qmk compile -kb keychron/k8/rgb/ansi -km via` in QMK_MSYS
 2. Download this flashing tool and run it: https://github.com/qmk/qmk_firmware/files/5862715/SONiX_USB_MCU_ISP_Tool_V2.3.1.7-.zip
 3. Click 'Load File' and select `SN32F24xB` on the right, then choose your \*.hex QMK firmware file
 4. VID - `0C45`, PID - `7040`, safe option "leave the standart"
