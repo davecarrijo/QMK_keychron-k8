@@ -84,6 +84,7 @@ If you have never touched QMK before: https://beta.docs.qmk.fm/tutorial/newbs_ge
 -   [x] Get QMK Working
 -   [x] Get RGB working
 -   [ ] Get VIA working (currently no EEPROM support, which is required for VIA)
+    (For some people it will work, for some it wont, I'm using windows 10, so it dont for people using windows 10 or less it may, but just in windows)
 -   [ ] Bluetooth functionality (currently waiting on official Bluetooth support from QMK)
 
 ## Chips
