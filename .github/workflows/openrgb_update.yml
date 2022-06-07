@@ -1,0 +1,37 @@
+name: Update sn32_master_openrgb after sn32_master merge
+
+on:
+  push:
+    branches:
+    - sn32_master
+
+
+jobs:
+  develop_update:
+    runs-on: ubuntu-latest
+
+    if: github.repository == 'SonixQMK/qmk_firmware'
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Checkout develop
+      run: |
+        git fetch origin sn32_master sn32_master_openrgb
+        git checkout sn32_master_openrgb
+
+    - name: Check if branch locked
+      id: check_locked
+      uses: andstor/file-existence-action@v1
+      with:
+        files: ".locked"
+
+    - name: Update openrgb from master
+      if: steps.check_locked.outputs.files_exists == 'false'
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git merge origin/sn32_master
+        git push origin sn32_master_openrgb

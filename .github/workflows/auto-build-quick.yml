@@ -1,0 +1,42 @@
+name: Compile Firmware (quick)
+
+on:
+  push:
+    branches:
+    - sn32_master
+  pull_request:
+    branches:
+    - sn32_master
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    container: d3xter93/sonix_base_container
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Install dependencies
+      run: pip3 install -r requirements.txt
+    - name: Build Sonix keyboards on quickbuild list
+      run:  python3 lib/python/build_all.py --whitelist quickbuild_whitelist
+    - name: Declare some variables
+      id: vars
+      shell: bash
+      run: |
+          echo "##[set-output name=branch;]$(echo ${GITHUB_REF_NAME//\//-})"
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
+    - uses: actions/upload-artifact@v2
+      if: ${{ always() }}
+      with:
+        name: Pre-Compiled Firmware (${{ steps.vars.outputs.branch }}-${{ steps.vars.outputs.sha_short }})
+        path: '*.bin'
+        
+    - uses: actions/upload-artifact@v2
+      if: ${{ always() }}
+      with:
+        name: Pre-Compiled Firmware
+        path: '*.bin'
