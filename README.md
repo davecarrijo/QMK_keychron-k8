@@ -1,5 +1,5 @@
 # QMK_keychron-k8 Reverse Engineering
-<img src="https://cdn.shopify.com/s/files/1/0599/4977/7066/files/Keychron-K8-UK-banner_1400x.jpg?v=1651999525">
+<img src="https://i.imgur.com/PtcO8El.png">
 This is an unofficial firmware, please use at your own discretion.
 
 This is for K8 RGB v2 ANSI.
