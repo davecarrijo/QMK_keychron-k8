@@ -7,22 +7,20 @@ This is for K8 RGB v2 ANSI.
 Here is the template keymap : https://imgur.com/a/rZqxYul
 
 FN+{
-F1 = F13
-F2 = F14
-F3 = F15
-F4 = F16
-Print key = F17
-MIc key = F18
-appkey/option = F19
-Light_bulb_key = toogle RGB
-
--   = less light from leds
-
-plus = more light from leds
-right key = change rgb mode
-Left key = change rgb mode
-Up/down key = more/less saturation
-Ins/Del key = change the Ritme of the RBG FX
+F1 = F13,
+F2 = F14,
+F3 = F15,
+F4 = F16,
+Print key = F17,
+MIc key = F18,
+appkey/option = F19,
+Light_bulb_key = toogle RGB,
+minus key  = less light from leds,
+plus key  = more light from leds,
+right key = change rgb mode,
+Left key = change rgb mode,
+Up/down key = more/less saturation,
+Ins/Del key = change the Ritme of the RBG FX,
 }
 
 Option key = App key/ concextual menu
